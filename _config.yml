@@ -1,4 +1,7 @@
 markdown: redcarpet
 permalink: /:year/:i_month/:i_day/:title.html
+<<<<<<< HEAD
 baseurl: /pages
+=======
+>>>>>>> a6f77a0ec333b9f1434c05b34967cf7ce1e9799c
 paginate: 3
