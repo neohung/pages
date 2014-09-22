@@ -3,7 +3,7 @@ layout: default
 title: 首頁
 ---
 <div id="articles">
-{% for post in site.posts %}
+{% for post in paginator.posts limit:3 %}  
   <article>
    <div class="item">
     <div class="item_details">
