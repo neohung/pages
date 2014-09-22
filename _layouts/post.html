@@ -16,10 +16,10 @@ rootfolder: /pages/
  <div class="item_meta">
   <div class="item_hierarchy">其他文章:
    {% if page.previous %}
-    <a href="{{ page.previous.url }}" title="Previous post">上一篇</a>
+    <a href="{{page.rootfolder}}{{page.previous.url}}" title="Previous post">上一篇</a>
    {% endif %}
    {% if page.next %}
-    {% if page.previous %}, {% endif %}<a href="{{ page.next.url }}" title="Next post">下一篇</a>
+    {% if page.previous %}, {% endif %}<a href="{{page.rootfolder}}{{page.next.url}}" title="Next post">下一篇</a>
    {% endif %}
   </div>
  </div>
