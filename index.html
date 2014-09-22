@@ -1,15 +1,15 @@
 ---
 layout: default
 title: 首頁
-rootfolder: pages
+rootfolder: /pages/
 ---
 <div id="articles">
 {% for post in paginator.posts limit:3 %}  
   <article>
    <div class="item">
     <div class="item_details">
-     <h3><a href="/{{ page.rootfolder }}/{{ post.url }}">{{ post.title }}</a></h3>
-     <h4><a href="/{{ page.rootfolder }}/{{ post.url }}" title="{{ post.title }}">{{ post.date | date_to_long_string }}</a> by <a href="">Neo</a></h4>
+     <h3><a href="{{ page.rootfolder }}{{ post.url }}">{{ post.title }}</a></h3>
+     <h4><a href="{{ page.rootfolder }}{{ post.url }}" title="{{ post.title }}">{{ post.date | date_to_long_string }}</a> by <a href="">Neo</a></h4>
   
     </div>
     <div class="item_content">
