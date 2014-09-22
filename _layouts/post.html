@@ -1,12 +1,13 @@
 ---
 layout: default
+rootfolder: /pages/
 ---
 <article class="hentry">
   <div class="item_perma">
     <div class="item_details">
       <header>
         <h3 class="entry-title">{{ page.title }}</h3>
-        <h4><a href="{{ page.url }}" title="Permalink for this post">{{ page.date | date_to_long_string }}</a> by <a href="">Neo</a></h4>
+        <h4><a href="{{ {{page.rootfolder}}page.url }}" title="Permalink for this post">{{ page.date | date_to_long_string }}</a> by <a href="">Neo</a></h4>
       </header>
     </div>
     <div class="item_content">
